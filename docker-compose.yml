@@ -1,4 +1,19 @@
-version: version
+version: 3.10
 services:
   worker:
     build: . 
+    environment:
+      API_ID: $API_ID 
+      API_HASH: $API_HASH 
+      BOT_TOKEN: $BOT_TOKEN
+      ADMINS: $ADMINS
+      CHANNELS: $CHANNELS
+      AUTH_USERS: $AUTH_USERS
+      AUTH_CHANNEL: $AUTH_CHANNEL
+      AUTH_GROUPS: $AUTH_GROUPS
+      DATABASE_URI: $DATABASE_URI
+      DATABASE_NAME: $DATABASE_NAME
+      COLLECTION_NAME: $COLLECTION_NAME 
+      LOG_CHANNEL: $LOG_CHANNEL 
+      SUPPORT_CHAT: $SUPPORT_CHAT 
+      SUPPORT_CHAT: $SUPPORT_CHAT
